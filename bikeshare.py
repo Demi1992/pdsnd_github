@@ -1,10 +1,11 @@
 import time
 import pandas as pd
 
+
+wrong_input = "Wrong input. Please, try again !!"
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
-wrong_input = "Wrong input. Please, try again !!"
 
 def get_filters():
     """
