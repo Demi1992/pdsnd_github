@@ -1,10 +1,11 @@
 import time
 import pandas as pd
 
+
+wrong_input = "Wrong input. Please, try again !!"
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
-wrong_input = "Wrong input. Please, try again !!"
 
 def get_filters():
     """
@@ -26,7 +27,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True :
         month = input("\nEnter the name of the month:\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nto filter by, or \"all\" to apply for no month filter:\n").lower()
-        if month in ["january", "february", "march", "april", "may", "june", "all"]:
+        if month in ["january", "february", "march", "april", "may", "june", "july", "all"]:
             break
         else:
             print(wrong_input)
